@@ -9,9 +9,10 @@
 import SwiftUI
 
 struct SliderUIKit: UIViewRepresentable {
-
-    @Binding var alfa: Double
-    @Binding  var value: Double
+    
+    @State var alfa: Double
+    @Binding var value: Int
+    @Binding var randomNumber: Int
     
     func makeUIView(context: Context) -> UISlider {
         
@@ -34,7 +35,10 @@ struct SliderUIKit: UIViewRepresentable {
     func updateUIView(_ uiView: UISlider, context: Context) {
         
         uiView.value = Float(value)
-        uiView.alpha = CGFloat(alfa)
+        uiView.alpha = CGFloat(StandartMethods.computeScore(
+            randomNumber: randomNumber,
+            sliderValue: value))
+
         
     }
     
@@ -46,24 +50,24 @@ struct SliderUIKit: UIViewRepresentable {
 
 extension SliderUIKit {
     class Coordinator: NSObject {
-        @Binding var value: Double
+        @Binding var value: Int
         
-        init(value: Binding<Double>){
+        init(value: Binding<Int>){
             self._value = value
         }
         
         @objc func valueChanged(sender: UISlider) {
             
-            value = Double(sender.value)
+            value = Int(sender.value)
         }
     }
 }
 
-
-
-
 struct Slider_Previews: PreviewProvider {
     static var previews: some View {
-        SliderUIKit(alfa: .constant(0.4), value: .constant(50))
+        SliderUIKit(alfa: 0.4, value: .constant(50), randomNumber: .constant(20))
     }
 }
+
+
+

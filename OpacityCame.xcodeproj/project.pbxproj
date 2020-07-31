@@ -14,6 +14,8 @@
 		A0057F4E24D464CF00C622C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0057F4D24D464CF00C622C4 /* Preview Assets.xcassets */; };
 		A0057F5124D464CF00C622C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0057F4F24D464CF00C622C4 /* LaunchScreen.storyboard */; };
 		A0057F5924D464E000C622C4 /* SliderUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0057F5824D464E000C622C4 /* SliderUIKit.swift */; };
+		A0057F5B24D4811400C622C4 /* StandartMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0057F5A24D4811400C622C4 /* StandartMethods.swift */; };
+		A0057F5F24D4830800C622C4 /* ButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0057F5E24D4830800C622C4 /* ButtonCustom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		A0057F5024D464CF00C622C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0057F5224D464CF00C622C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0057F5824D464E000C622C4 /* SliderUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderUIKit.swift; sourceTree = "<group>"; };
+		A0057F5A24D4811400C622C4 /* StandartMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandartMethods.swift; sourceTree = "<group>"; };
+		A0057F5E24D4830800C622C4 /* ButtonCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCustom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				A0057F4624D464CC00C622C4 /* SceneDelegate.swift */,
 				A0057F4824D464CC00C622C4 /* ContentView.swift */,
 				A0057F5824D464E000C622C4 /* SliderUIKit.swift */,
+				A0057F5E24D4830800C622C4 /* ButtonCustom.swift */,
+				A0057F5A24D4811400C622C4 /* StandartMethods.swift */,
 				A0057F4A24D464CF00C622C4 /* Assets.xcassets */,
 				A0057F4F24D464CF00C622C4 /* LaunchScreen.storyboard */,
 				A0057F5224D464CF00C622C4 /* Info.plist */,
@@ -151,8 +157,10 @@
 			files = (
 				A0057F4524D464CC00C622C4 /* AppDelegate.swift in Sources */,
 				A0057F4724D464CC00C622C4 /* SceneDelegate.swift in Sources */,
+				A0057F5B24D4811400C622C4 /* StandartMethods.swift in Sources */,
 				A0057F5924D464E000C622C4 /* SliderUIKit.swift in Sources */,
 				A0057F4924D464CC00C622C4 /* ContentView.swift in Sources */,
+				A0057F5F24D4830800C622C4 /* ButtonCustom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
