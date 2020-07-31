@@ -45,7 +45,6 @@ struct SliderUIKit: UIViewRepresentable {
     func makeCoordinator() -> SliderUIKit.Coordinator {
         Coordinator(value: $value)
     }
-    
 }
 
 extension SliderUIKit {
